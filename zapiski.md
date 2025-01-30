@@ -91,10 +91,10 @@ Spreminjanje signalov v pravo obliko.
 **A -> D** = Demodulacija
 
 #### Modulacija:
-- **AM** - amplitude modulation
-- **FM** - frequency modulation
-- **PM** - phase modulation
-- **QAM** - square wave modulation
+- **AM** - **A**mplitude **M**odulation
+- **FM** - **F**requency **M**odulation
+- **PM** - **P**hase **M**odulation
+- **QAM** - **Q**uadrature **A**mplitude **M**odulation
 
 #### Digitalna kodiranja:
 - **NRZ-L** - Non Return to Zero-Level

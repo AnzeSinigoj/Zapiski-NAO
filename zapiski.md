@@ -96,6 +96,8 @@ Spreminjanje signalov v pravo obliko.
 - **PM** - **P**hase **M**odulation
 - **QAM** - **Q**uadrature **A**mplitude **M**odulation
 
+![modulacije](slike/am-fm.gif)
+
 #### Digitalna kodiranja:
 - **NRZ-L** - Non Return to Zero-Level
 - **NRZI** - Non Return to Zero Inverted

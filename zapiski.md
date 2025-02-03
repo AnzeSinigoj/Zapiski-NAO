@@ -119,6 +119,42 @@ Spreminjanje signalov v pravo obliko.
 - **Diferencialni Manchester**
 - **in druga..**
 
+#### Non Return Zero-Level (NRZ-L)
+- Enka se kodira s pozitivnim nivojem
+- Ničla se kodira s negativnim nivojem
+- Slabost je sinhroniacija
+
+
+#### Non Return Zero Inverted (NRZI)
+- Ničla ne spremeni signala
+- Enka obrne signal (invertira)
+
+<img src="slike/NRZ.png" alt="NRZ" height="256">
+
+<hr>
+
+#### Manchester
+- Ničla obrne signal na negativno stanje (predhodno)
+- Enka obrne signal na pozitivno stanje
+- Uporablja se na LAN omrežjih
+- IEEE 802.5
+
+#### Diferenčni Manchester 
+- Ničla prehoodi tudi na začetku intervala
+- Enka ne prehodi na začetku intervala
+
+Za oba Manchester velja da, se stanje spremeni na polovici trajanja signala.
+
+<img src="slike/manchester.png" alt="Manchester" height="256">
+
+**V Manchester si lahko predstavljamo stanja 1 in 0 tako:**
+
+<img src="slike/man-ez.png" alt="Manchester" height="256">
+
+<hr>
+
+
+
 <hr>
 
 >#### Random pojmi:

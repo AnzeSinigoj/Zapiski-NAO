@@ -153,8 +153,38 @@ Za oba Manchester velja da, se stanje spremeni na polovici trajanja signala.
 
 <hr>
 
+## Povezovalna plast
 
+### Naloge povezovalne plasti
+- okvirjanje datagramov
+- zaznavanje in odpravljanje napak
+- dostop do medija
+- zagotavljanje zanesljive dostave
+- kontrola pretoka
 
+### Okvirjanje datagramov
+Dodajanje repa in glave paketu iz višje plasti
+
+Izgled okvirja:
+**[glava]****[podatki]****[rep]**
+
+### Zaznavanje in odpravljanje napak
+#### Tehnike:
+- **Parity bit**
+    - doda se 1 ali 0 tako da je skupno št. enic paketa sodo oz. liho 
+    - nevemo kje je prišlo do napake
+    - če pride do 2 bit-flipa napake ne zaznamo
+    <img src="slike/parity-bit-normal.png" alt="parity bit">
+- **2D parity bit**
+    - enako samo na več paketih skupaj
+    - lahko zaznamo na katerem paketu je prišlo do napake
+    <img src="slike/parity-bit-2d.png" alt="2D parity bit">
+
+- **Hamming code**
+    - Zazna in popravi napake na posameznih bitih tako, da podatkom doda dodatne paritetne bite. Uporablja specifičen vzorec paritetnih pregledov, ki so postavljeni na mesta, ki so potence števila 2 (1, 2, 4, 8 itd.), da omogoči zaznavanje in popravljanje napak. Če med prenosom pride do napake, koda izračuna sindrom, ki pomaga določiti točno napako in jo popraviti.
+    <img src="slike/hamming.jpg" alt="haming">
+
+- **tmp**
 <hr>
 
 >#### Random pojmi:
@@ -162,3 +192,4 @@ Za oba Manchester velja da, se stanje spremeni na polovici trajanja signala.
 >- Metric = v routing table pove koliko je vir zanesljiv (majnše kot je bolje je)
 >- Modem = Modulator/Demodulator
 >- Carrier signal = osnovni signal kateri nosi podatke
+>- EDC (Error Detection Code) dodatni poslani biti namenjeni preverjanju pravilnosti

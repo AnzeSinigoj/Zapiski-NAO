@@ -151,8 +151,6 @@ Za oba Manchester velja da, se stanje spremeni na polovici trajanja signala.
 
 <img src="slike/man-ez.png" alt="Manchester" height="256">
 
-<hr>
-
 ## Povezovalna plast
 
 ### Naloge povezovalne plasti
@@ -184,7 +182,72 @@ Izgled okvirja:
     - Zazna in popravi napake na posameznih bitih tako, da podatkom doda dodatne paritetne bite. Uporablja specifičen vzorec paritetnih pregledov, ki so postavljeni na mesta, ki so potence števila 2 (1, 2, 4, 8 itd.), da omogoči zaznavanje in popravljanje napak. Če med prenosom pride do napake, koda izračuna sindrom, ki pomaga določiti točno napako in jo popraviti.
     <img src="slike/hamming.jpg" alt="haming">
 
-- **tmp**
+- **CRC (Cyclic Redundancy Check)**
+    - Uporablja se na ETH
+    - Matematična funkcija, ki temelji na polinomih.
+    - Oznake:
+        - M = message
+        - P = polinom
+        - m = stopnja polinoma
+    - Postopek:
+        1. ???
+        2. ???
+        3. ???
+
+### Dostop do medija
+#### Protokoli za delitev
+
+- **TDMA**
+    - ???
+- **FDMA**
+    - ???
+
+#### Protokoli za nakjučni dostop
+
+- **ALOHA**
+    - Zgodnja 70. leta, Havaji
+    - Vsak lahko oddaja okvir ko želi.
+    - Samo 18% učinkovitosti
+- **Slotted ALOHA**
+    - Razdeljen čas oddajanja na enake intervale
+    - Oddaja možna samo v intervalu
+    - 37% učinkovitost
+- **CSMA (Carrier Sense Multiple Access)**
+    - Naprej se posluša in, ko je kanal prost se lahko oddaja
+    - Če pride do kolizije se vsem napravam pošlje jam signal
+- **CSMA/CD (Carrier Sense Multiple Access / Collision Detection)**
+    - ???
+    - Več kot 85% učinkovitost
+- **CSMA/CA (Carrier Sense Multiple Access / Collision Avoidance)** 
+    - ???
+    - Uporablja se v brezžičnih omrežjih
+    - RTC (Request To Send) "želim pošiljati"
+    - CTS (Clear To Send) "lahko pošiljaš"
+
+#### Protokoli za izmenični dostop
+- **Poizvedovanje (polling)**
+    - Centralno vozlišče poizveduje 
+    - Rezervira si vsak čas naprej
+- **Podajanje žetona (token passing)**
+    - Oddaja samo tisti, ki ima žeton
+    - Žeton se podaja med napravami
+
+#### Zagotavljanje zanesljive dostave
+- **Pozitivna potrditev (ACK)**
+- **Negativna potrditev (NACK)**
+
+#### Nadzor pretoka (flow control)
+#### Protokoli:
+
+- **XON/XOFF**
+    - Prejeti paketi se dajo v čakalno vrsto
+    - Ko je čakalna vrsta polna pošlje signal XOFF <- ustavi pošiljat
+    - Ko se čakalna vrsta začne prazniti se pošlje XON <- začni pošiljat
+- **Drseče okno (Sliding window)**
+    - ???
+
+## Omrežna plast
+
 <hr>
 
 >#### Random pojmi:
@@ -193,3 +256,13 @@ Izgled okvirja:
 >- Modem = Modulator/Demodulator
 >- Carrier signal = osnovni signal kateri nosi podatke
 >- EDC (Error Detection Code) dodatni poslani biti namenjeni preverjanju pravilnosti
+>- XOR tabela
+>   ```
+>       X Y | X XOR Y
+>       ---------------
+>       0 0 | 0   
+>       0 1 | 1
+>       1 0 | 1
+>       1 1 | 0 
+>   ```
+> -

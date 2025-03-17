@@ -247,11 +247,49 @@ Izgled okvirja:
     - ???
 
 ## Omrežna plast
+### Usmerjevalnik:
+- Naprava v najvišji plasti kjer so naprave.
+- Izavaja usmerjevanje in posredovanje
+- Fowarding table -> odloča skozi katera vrata naj posreduje
+- Deli omrežja na podomrežja
+
+### Tipi omrežji
+- **Povezalna omrežja(virtual channels)**
+    - Ni IP naslovov ampak so števila vodov
+    - Ko 2 napravi govorita je vod zaseden
+- **Napovezalna omrežja (datagram, packet)**
+    - Paket ima naslov, se posreduje do njega
+    - Internet je paketno omrežje
+
+### IP: Internet Protocol
+- **IPv4 : Internet Protocol version 4**
+    - 32b -> po 4 segmenti po 4b razdeljeni s "."
+    - npr: 192.168.1.12
+- **IPv6: Internet Protocol version 6**
+    - 128b -> 16 segmentov po 16b v HEX št. sistemu razdeljeni s ":"
+    - npr: AB12::879A:0:0:1233
+
+#### Zgradba IP paketa
+<img src="slike/ip.png" alt="ip">
+
+#### NAT: Network Adress Translation
+```
+192.168.1.12 -> 192.2.139.50 ........... 45.34.132.41 -> 192.168.1.12
+                    NAT                      NAT
+                192.168.1.1              192.168.1.1
+```
+
+#### ICMP: Internet Control Message Protocol
+Nadzorna sporočila za omrežje:
+<img src="slike/icmp.jpg" alt="icmp">
+
+
 
 <hr>
 
 >#### Random pojmi:
 >- TTL = time to live
+>- MTU = Maximun Transmission Unit
 >- Metric = v routing table pove koliko je vir zanesljiv (majnše kot je bolje je)
 >- Modem = Modulator/Demodulator
 >- Carrier signal = osnovni signal kateri nosi podatke

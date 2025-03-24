@@ -283,7 +283,8 @@ Izgled okvirja:
 Nadzorna sporočila za omrežje:
 <img src="slike/icmp.jpg" alt="icmp">
 
-
+## Transportna plast
+**TCP** & **UDP**
 
 <hr>
 
@@ -294,6 +295,7 @@ Nadzorna sporočila za omrežje:
 >- Modem = Modulator/Demodulator
 >- Carrier signal = osnovni signal kateri nosi podatke
 >- EDC (Error Detection Code) dodatni poslani biti namenjeni preverjanju pravilnosti
+>- RTT = round trip time
 >- XOR tabela
 >   ```
 >       X Y | X XOR Y
@@ -303,4 +305,4 @@ Nadzorna sporočila za omrežje:
 >       1 0 | 1
 >       1 1 | 0 
 >   ```
-> -
+> 

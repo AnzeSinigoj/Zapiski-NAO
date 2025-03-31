@@ -286,6 +286,18 @@ Nadzorna sporočila za omrežje:
 ## Transportna plast
 **TCP** & **UDP**
 
+
+## Aplikacijska plast
+HTTP
+
+proxy
+
+ftp
+
+dns
+
+scp
+
 <hr>
 
 >#### Random pojmi:
@@ -305,4 +317,4 @@ Nadzorna sporočila za omrežje:
 >       1 0 | 1
 >       1 1 | 0 
 >   ```
-> 
+ 

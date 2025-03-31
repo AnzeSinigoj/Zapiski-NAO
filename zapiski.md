@@ -298,6 +298,13 @@ dns
 
 scp
 
+# Varnost omrežja
+
+#### Vrste napadalcev:
+- Aktivni
+- Pasivni
+
+
 <hr>
 
 >#### Random pojmi:

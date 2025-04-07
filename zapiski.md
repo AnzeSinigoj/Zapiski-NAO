@@ -304,6 +304,57 @@ scp
 - Aktivni
 - Pasivni
 
+#### Kako nam lahko škodujejo:
+- Prisluškovanje
+- Modifikacja sporočil in podatkov
+- Onemogočanje sotritev
+- Kraja identitete/podatkov
+- ...
+
+#### Elementi omrežne varnosti:
+- CIA trikotnik
+    - Confidentiality (Zaupnost)
+        - Podatki morajo biti ne dostopni ne pooblaščenim uporabnikom.
+    - Integrity (Celovitost)
+        - Podatki na poti niso bili spremenjeni.
+    - Authentication (Pooblaščenost)
+        - Sogovornika si morata potrditi identiteto.
+
+### Kriptografija:
+#### Terminologija:
+- Plaintext (Čistopis)
+    - Gola vsebina sporočila.
+- Ciphertext (Kriptogram)
+    - Zakrita vsebina sporočila. (Kriptirana)
+- Enkripcijski algoritem
+    - Algoritem za kriptiranje.
+- Key (Ključ)
+    - Podatek za kriptiranje in dekriptiranje.
+
+#### Tipi kriptografije:
+- Simetric
+    - Enak ključ je uporabljen za encryption in decryption.
+- Asimetric
+    - Drugača ključa za encryption in decryption.
+    - Public key infrastructure (PKI)
+- Hashing functions
+    - Zgosti podatke v eno sekvenco bitov.
+    - Je NEPOVRATNA
+
+#### Kriptografija s simetričnim ključem
+- Substitucijske metode
+- Transpozicijske metode
+
+##### Substitucijske metode
+- Cezarjev kriptogram
+    - Zamaknejo se črke
+    - Ključ je št. črk v zamiku
+    - 25 možnih ključev
+- Vigenerjev kriptogram
+    - Dvodimenzionalni
+    - Vsebuje vse može Cezarjeve ključe
+- Portrejev kriptogram
+    - Podoben prejšnjemu ampak s znaki
 
 <hr>
 
